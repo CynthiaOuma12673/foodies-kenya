@@ -1,0 +1,28 @@
+
+.home{
+    text-align: center;
+    padding: 2rem;
+}
+.home .container-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.home .container-box .box{
+    text-align: center;
+    padding: 2rem;
+}
+.our-story{
+    text-align: center;
+}
+
+footer .box-footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.home .box-footer .box{
+    text-align: center;
+    padding: 2rem;
+}
