@@ -1,13 +1,72 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Oswald:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;1,200&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0%; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+body{
+    background-color: black;
+    color: #fff;
+}
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+.header{
+    padding: .4rem 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   z-index: 1000;
+   top: 0; left: 0; right: 0;
+   position: fixed;
+  color: #fff;
+  text-transform: capitalize;
+   
+}
+.header .navbar a{
+    margin: 0 1rem;
+    list-style: none;
+    font-size: 1.6rem;
+    color: black;
+    text-decoration: none;
+   
+}
+.header .navbar a:hover{
+    color: #dddddd;
+    padding-bottom: 5rem;
+    border-bottom: .1rem solid #dddddd ;
+}
 .home{
     text-align: center;
-    padding: 2rem;
+
 }
 .home .welcome{
-    background: url(images/3.jpg);
+    height: 40rem;
+    margin: 0%;
+    padding: 0%;
+    background: url(/images/2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+}
+.home .welcome .amazing{
+    padding-top: 15%;
+}
+.home.welcome .amazing h3{
+    color: black;
+    font-family: 'Neonderthaw', cursive;
+    font-style: italic;
+    margin: 1%;
     
 }
 .home .container-box{
@@ -17,7 +76,12 @@
 }
 .home .container-box .box{
     text-align: center;
-    padding: 2rem;
+    padding: 5%;
+    
+}
+.home .container-box .box img{
+    height: 300px;
+    width: 500px;
 }
 .our-story{
     text-align: center;
