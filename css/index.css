@@ -3,6 +3,13 @@
     text-align: center;
     padding: 2rem;
 }
+.home .welcome{
+    background: url(images/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 .home .container-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
