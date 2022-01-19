@@ -83,8 +83,28 @@ html{
     height: 300px;
     width: 500px;
 }
-.our-story{
+.home .our-story{
     text-align: center;
+     height: 30rem; 
+    margin: 0%;
+    padding: 0%;
+    background: url(/images/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.home .our-story .story-content{
+    padding-top: 10%;
+}
+.home .our-story .story-content h1{
+    font-size: 1.5rem;
+}
+.home .our-story .story-content p{
+    padding-right: 7%;
+    padding-left: 7%;
+    font-size: 1.5rem;
+    color: black;
 }
 
 footer .box-footer{
@@ -96,4 +116,10 @@ footer .box-footer{
 .home .box-footer .box{
     text-align: center;
     padding: 2rem;
+}
+
+.ke{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.2rem;
 }
