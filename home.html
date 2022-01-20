@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Foodies-kenya-home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- font  -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Foodies<br><small>-
+                        Kenya</small></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span> Menu
+                </button>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="menu.html" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- start of home section -->
+        <section class="home" id="home">
+            <div class="first">
+                <div class="text-center " >
+                    <div class="welcome" style=" background: url(/images/2.jpg);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 70vh;">
+                    <br><br><br><br>
+                     <h3 style="font-size: 5rem;">Welcome</h3>
+                     <h1 style="font-size: 4rem;">AMAZING EXPERIENCE <em>AMAZING FOOD</em></h1>
+                     <button id="btn" style="background-color: black;color: white; width: 10rem; height: 3rem;">Order Now</button>
+                     <button id="button-btn" style="background-color: black;color: white; width: 10rem; height: 3rem;">View Product</button>
+                     <div id="order" style="display: none;">
+                        <form action="" onsubmit="validateInputs">
+                            <div class="error_message"></div>
+                            <input name="name" type="text" id="username" class="username" placeholder="Enter your Name:"><br>
+                            <input name="phone" type="text" id="userphone" class="userphone" placeholder="Enter your Phone Number:"><br>
+                            <input name="location" type="text" id="userlocation" class="userlocation" placeholder="Enter your Location:"><br>
+                               <div class="selectoption">
+                                <h3>Choose your Order</h3>
+                                Food
+                              <input  type="checkbox" name="food" id="food">
+                              Wedding Event
+                              <input  type="checkbox" name="weddingEvent" id="weddingEvent">
+                              Corporate Events
+                              <input type="checkbox" name="corporateEvent" id="corporateEvent"><br>
+                             <button type="submit" id="submitOrder" class="">Make</button>
+                               </div>
+                        </form>
+                    </div>
+                     
+                 </div>
+            </div>
+            </div><br><br>
+            <div class="container-box" style="display: flex; justify-content: space-around;">
+           
+             <div class="box">
+                 <h3 class="text-center">Private theme</h3>
+                 <img src="images/1.jpg" alt="" style="width: 30rem; height: 25rem;">
+             </div>
+             <div class="box">
+                 <h3 class="text-center">Weddings</h3>
+                 <img src="images/3.jpg" alt="" style="width: 30rem; height: 25rem;">
+             </div>
+             <div class="box">
+                 <h3 class="text-center">Corporate</h3>
+                 <img src="images/4.jpg" alt="" style="width: 30rem; height: 25rem;">
+             </div>
+            </div>
+            </div><br><br>
+            <div class="our-story">
+                <h1 class="text-center" style="font-size: 3rem; font-style: italic;">Our Story</h1>
+                <p class="text-center" style="font-size: 2rem;">Foodies Kenya Was started in 2022 January.We are young company that aims to connect food lovers with food Service Providers.
+                Following the COVID 19 menace one of the major sectors in the country that has been negatively impacted is the food and catering industry.The restrictions put has led to few number of people visiting hotels and food  places.Private Events have also been restricted to certain number of people.
+                This has led to many people including Chefs,cooks and other food Service Providers losing Jobs hence loose of income.
+                It is with this background that we created Foodies Kenya.A modern Web application that allows food Service providers to list their Services on the site .In turn food lovers and those looking for food Services can book them to offer Services at their preffered location or deliver meals to them.</p>
+                
+            </div>
+        </section>
+        
+        <!-- End of home section -->
+     <!-- footer section -->
+     <br><br>
+     <footer >
+        <div class="box-footer" style="display: flex; justify-content: space-around; font-size: 2rem;" >
+        <div class="box">
+            <h3>Working Hours</h3>
+            <p>Working Days</p>
+            <p>8:00am-5:00pm</p>
+        </div>
+        <div class="box">
+            <h3>Contact information</h3>
+            <p>Phone: +254711325689</p>
+            <p>Email: foodieskenya@gmail.com </p>
+        </div>
+        <div class="box">
+            <h3>Location</h3>
+            <p>Westlands, Nairobi</p>
+            <p>Our House</p>
+        </div>
+        </div><br>
+            <p class="text-center" style="font-size: 2rem;">Foodies Ke &copy 2022 All Rights reserved.</p>
+    </footer>
+   <!-- custom script -->
+   <script src="js/home.js"></script>
+
+</body>
+</html>
