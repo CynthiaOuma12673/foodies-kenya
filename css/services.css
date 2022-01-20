@@ -1,4 +1,7 @@
-
+body {
+    background-color: black;
+    color: white;
+}
 
 
 .nav {
@@ -210,4 +213,18 @@
     content: "";
     background: no-repeat center center;
     background-size: 100% 100%;
+}
+ 
+
+
+/* planning */
+.planning {
+    display: flex;
+    margin-left: 5rem;
+    padding: 2rem;
+    justify-content: space-around;
+}
+.planning img {
+    width: 25rem;
+    height: 20rem;
 }
