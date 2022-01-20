@@ -1,9 +1,9 @@
 
 
-order.addEventListener("submit", (e)=>{
-    e.preventDefault();
-    validateInputs();
-})
+// order.addEventListener("submit", (e)=>{
+//     e.preventDefault();
+//     validateInputs();
+// })
  document.getElementById("btn").onclick = function() {
     document.getElementById("order").style.display = "block";
 }

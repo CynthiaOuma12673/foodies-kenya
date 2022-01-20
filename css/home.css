@@ -2,8 +2,14 @@ body {
     background-color: black;
     color: white;
 }
-
-
+.container-box .box{
+    margin: 2rem;
+    padding: 2%;
+}
+.container-box .box img{
+    height: 200px;
+    width: auto;
+}
 .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -367,24 +373,21 @@ footer .box-footer{
     margin: 0%;
     padding: 0%;
    margin-top: 2%;
-    background: url(/images/2.jpg);
+    background: url(images/2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.home .welcome .amazing{
+.home .text-centered{
+    text-align: center;
     padding-top: 15%;
     padding-top: 10%;
 }
-.home .welcome .amazing #btn{
+.home .welcome  #btn{
     border: 1px solid #fff;
 
-
-
-
-
 }
-.home .welcome .amazing .selectoption #submitOrder{
+.home .welcome .selectoption #submitOrder{
     color: #fff;
     background: grey;
     cursor: pointer;
@@ -393,14 +396,14 @@ footer .box-footer{
     border-radius: 1rem;
     transition: all 0.5s;
 }
-/* .home .welcome .amazing #button-btn:hover{ */
-.home .welcome .amazing .selectoption #submitOrder:hover{
+
+.home .welcome  .selectoption #submitOrder:hover{
     color: black;
     background: #fff;
     cursor: pointer;
     font-size: 1.5rem;
 }
-.home .welcome .amazing #button-btn{
+.home .welcome #button-btn{
     color: #fff;
     background: grey;
     cursor: pointer;
@@ -408,15 +411,16 @@ footer .box-footer{
     padding: 1%;
     transition: all 0.5s;
 }
-.home .welcome .amazing #button-btn:hover{
+.home .welcome  #button-btn:hover{
     color: white;
     background: black;
     cursor: pointer;
     font-size: 1.5rem;
 }
-.home.welcome .amazing h3{
+.home.welcome  h3{
     color: black;
     font-family: 'Neonderthaw', cursive;
+}
 
 /* media queries  */
 @media (max-width:991px){
