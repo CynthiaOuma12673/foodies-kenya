@@ -23,45 +23,219 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
 }
-.header{
-    padding: .4rem 2%;
+.nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-family: 'poppins';
+}
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    text-decoration: none;
+}
+
+.nav-link.disabled {
+    color: #6c757d;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+
+.nav-tabs .nav-link.disabled {
+    color: #6c757d;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #78d5ef;
+}
+
+.nav-fill .nav-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.nav-justified .nav-item {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+
+.navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
-   z-index: 1000;
-   top: 0; left: 0; right: 0;
-   position: fixed;
-  color: #fff;
-  text-transform: capitalize;
-   
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
-.header  a{
-    margin: 0 1rem;
+
+.navbar>.container,
+.navbar>.container-fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+    text-decoration: none;
+}
+
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
     list-style: none;
-    font-size: 1.6rem;
-    color: #fff;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none;
+}
+
+.navbar-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
     text-decoration: none;
-   
 }
-header  a span{
-    
-    font-size: 1.7rem;
-    color: #f1dcdc;
-    text-decoration: none;
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
 }
-.header .navbar a{
-    margin: 0 1rem;
-    list-style: none;
-    font-size: 1.6rem;
-    color: #fff;
-    text-decoration: none;
-   
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
 }
-.header .navbar a:hover{
-    color: #dddddd;
-    padding-bottom: 5rem;
-    border-bottom: .1rem solid #dddddd ;
-}
+ 
+
 .home{
     text-align: center;
 
@@ -218,12 +392,7 @@ footer .box-footer{
 @media (max-width:991px){
 
     html{
-        font-size: 55%;
-    }
-
-    .home::before,
-    .home::after{
-        display: none;
+        font-size: 70%;
     }
 
 }
@@ -231,52 +400,25 @@ footer .box-footer{
 @media (max-width:768px){
 
 
-    header #menu-bar{
-        display: block;
-    }
-
     header .navbar{
         position: fixed;
-        top:8rem; left:0;
+        top:5rem; left:0;
         width:100%;
         border-top: .2rem solid rgba(0,0,0,.1);
-        transform:scaleY(0);
         transform-origin: top;
-        opacity: 0;
+        /* opacity: 0; */
+        color: #f1dcdc;
     }
 
-    header .navbar ul{
-        flex-flow: column;
-        padding:2rem;
-    }
 
-    header .navbar ul li{
-        margin:1.5rem;
-        width: 100%;
-    }
-
-    header .navbar ul li a{
-        display: block;
+    header .navbar  a{
         color:#fff;
-        padding-left: 2rem;
+
         border-left: .2rem solid #fff;
         font-size: 2rem;
     }
 
-    header .navbar ul li a:hover,
-    header .navbar ul li a.active{
-        color:#333;
-        border-color: #333;
-    }
-
-    .fa-times{
-        transform:rotate(180deg);
-    }
-
-    header .navbar.nav-toggle{
-        transform:scaleY(1);
-        opacity: 1;
-    }
+   
 
     .home .content{
         text-align: center;
@@ -286,9 +428,6 @@ footer .box-footer{
         font-size: 4.5rem;
     }
 
-    .order .row .image{
-        display: none;
-    }
 
 }
 

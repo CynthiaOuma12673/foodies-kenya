@@ -1,7 +1,7 @@
 
 
 
-
+// hide & show the order form
 
 order.addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -19,6 +19,8 @@ document.getElementById("submitOrder").onclick = function() {
 
 }
 
+
+// Validating the Order form
 
 const form=document.querySelector('form');
 const nameInput=document.querySelector('input[name="name"]');
