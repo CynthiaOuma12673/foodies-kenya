@@ -1,0 +1,172 @@
+*{
+    margin: 0%;
+}
+
+.top {
+    height: 500px;
+    background-size: cover;
+    
+}
+.top h1{
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 80px;
+}
+.top h2 {
+    color: white;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 40px;
+}
+.top h2 span {
+    background-color: transparent;
+    margin-right: 10px;
+    border-right: solid white;
+    padding-right: 10px;
+    border-width: 8px;
+}
+
+.reaching-us{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    padding-top: 20px;
+
+}
+
+form{
+  
+    width: 50%;
+    background: rgb(218, 205, 187);
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    
+}
+#text {
+    padding: 60px;
+    color: white;
+    font-size: 30px;
+}
+
+label{
+    display: block;
+    margin: 20px;
+    background: rgb(218, 205, 187);
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    border: solid rgb(218, 205, 187);
+}
+#name, #email, #subject, #message{
+    border: solid rgb(218, 205, 187);
+    border-bottom: solid white 5px;
+}
+input, textarea {
+    width: 100%;
+    background: rgb(218, 205, 187);
+    outline: none;
+    resize: none;
+    background: rgb(218, 205, 187);
+    border-bottom: solid white;
+    padding: 5px;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 4px solid black;
+}
+
+textarea::-webkit-scrollbar {
+    width: 6px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.center {
+   
+    background: rgb(218, 205, 187);
+    margin-top: 0%;
+    padding-bottom: 10px;
+}
+
+input[type="button"] {
+    margin-top: 20px;
+    width: 85%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(218, 205, 187), rgb(207, 181, 187));
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#error-one {
+    color: red;
+    background: rgb(252, 231, 231);
+    
+}
+#error-two {
+    color: red;
+    background: rgb(252, 231, 231);
+}
+#error-three {
+    color: red;
+    background: rgb(252, 231, 231);
+}
+
+.error-border{
+    border-bottom: 3px solid red;
+}
+
+#success {
+    color: green;
+}
+
+.end {
+    margin-top: 620px;
+    display: flex;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.end h1{
+    font-size: 35px;
+}
+.end p{
+    font-size: 20px;
+}
+.open-hours{
+    margin-left: 50px;
+    text-align: center;
+}
+.customer-care{
+    margin-left: 50px;
+    text-align: center;
+}
+
+.offices {
+    margin-left: 50px;
+    text-align: center;
+}
+footer .box-footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.home .box-footer .box{
+    text-align: center;
+    padding: 2rem;
+}
+.ke{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+}
