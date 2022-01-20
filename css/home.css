@@ -335,3 +335,156 @@ body {
     background: no-repeat center center;
     background-size: 100% 100%;
 }
+home{
+    text-align: center;
+    padding: 2rem;
+}
+.home .container-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.home .container-box .box{
+    text-align: center;
+    padding: 2rem;
+}
+.our-story{
+    text-align: center;
+}
+footer .box-footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.home .box-footer .box{
+    text-align: center;
+    padding: 2rem;
+}
+
+.home .welcome{
+    height: 40rem;
+    margin: 0%;
+    padding: 0%;
+   margin-top: 2%;
+    background: url(/images/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .welcome .amazing{
+    padding-top: 15%;
+    padding-top: 10%;
+}
+.home .welcome .amazing #btn{
+    border: 1px solid #fff;
+
+
+
+
+
+}
+.home .welcome .amazing .selectoption #submitOrder{
+    color: #fff;
+    background: grey;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1%;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+/* .home .welcome .amazing #button-btn:hover{ */
+.home .welcome .amazing .selectoption #submitOrder:hover{
+    color: black;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.home .welcome .amazing #button-btn{
+    color: #fff;
+    background: grey;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1%;
+    transition: all 0.5s;
+}
+.home .welcome .amazing #button-btn:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.home.welcome .amazing h3{
+    color: black;
+    font-family: 'Neonderthaw', cursive;
+
+/* media queries  */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .home::before,
+    .home::after{
+        display: none;
+    }
+}
+@media (max-width:768px){
+    header #menu-bar{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top:8rem; left:0;
+        width:100%;
+        border-top: .2rem solid rgba(0,0,0,.1);
+        transform:scaleY(0);
+        transform-origin: top;
+        opacity: 0;
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding:2rem;
+    }
+    header .navbar ul li{
+        margin:1.5rem;
+        width: 100%;
+    }
+    header .navbar ul li a{
+        display: block;
+        color:#fff;
+        padding-left: 2rem;
+        border-left: .2rem solid #fff;
+        font-size: 2rem;
+    }
+    header .navbar ul li a:hover,
+    header .navbar ul li a.active{
+        color:#333;
+        border-color: #333;
+    }
+    .fa-times{
+        transform:rotate(180deg);
+    }
+    header .navbar.nav-toggle{
+        transform:scaleY(1);
+        opacity: 1;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .content h3{
+        font-size: 4.5rem;
+    }
+    .order .row .image{
+        display: none;
+    }
+}
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+
+    .section{
+        padding:1rem 5%;
+        padding-top: 8.5rem;
+    }
+}
