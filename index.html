@@ -24,6 +24,7 @@
             <a href="#" class="logo">
                 Foodies <span>Kenya</span>
             </a>
+            <div id="menu-bar" class="fas fa-hamburger"></div>
             <nav class="navbar">
                 <a href="#home">home</a>
                 <a href="menu">menu</a>
@@ -40,8 +41,28 @@
            <div class="amazing">
             <h3>Welcome</h3>
             <h1>AMAZING EXPERIENCE <em>AMAZING FOOD</em></h1>
-            <button id="btn">Order Now</button>
+            <button id="btn" type="submit" >Order Now</button>
             <button id="button-btn">View Product</button>
+            <div id="order">
+                <form action="" onsubmit="validateInputs">
+                    <div class="error_message"></div>
+                    <input name="name" type="text" id="username" class="username" placeholder="Enter your Name:"><br>
+                    <input name="phone" type="text" id="userphone" class="userphone" placeholder="Enter your Phone Number:"><br>
+                    <input name="location" type="text" id="userlocation" class="userlocation" placeholder="Enter your Location:"><br>
+                       <div class="selectoption">
+                        <h3>Choose your Order</h3>
+                        Food
+                      <input  type="checkbox" name="food" id="food">
+                      Wedding Event
+                      <input  type="checkbox" name="weddingEvent" id="weddingEvent">
+                      Corporate Events
+                      <input type="checkbox" name="corporateEvent" id="corporateEvent"><br>
+                     <button type="submit" id="submitOrder" class="">Make</button>
+                       </div>
+                    
+                </form>
+            </div>
+            
            </div>
         </div>
         <div class="container-box">
@@ -90,8 +111,12 @@
         </div>
         
         </div>
-    
+       <hr />
        <p class="ke">Foodies Ke &copy 2022 All Rights reserved.</p>
      </footer>
+     <!-- custom script link -->
+     <script src="js/script.js"></script>
+     <!-- custom jquery file -->
+     <script src="js/jquery.js"></script>
 </body>
 </html>
