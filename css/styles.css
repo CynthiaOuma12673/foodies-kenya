@@ -155,3 +155,18 @@ input[type="button"] {
     margin-left: 50px;
     text-align: center;
 }
+footer .box-footer{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.home .box-footer .box{
+    text-align: center;
+    padding: 2rem;
+}
+.ke{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.2rem;
+}
