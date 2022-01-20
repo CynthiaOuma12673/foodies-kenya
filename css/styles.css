@@ -57,10 +57,14 @@ label{
     display: block;
     margin: 20px;
     background: rgb(218, 205, 187);
-    color: black;
+    color: white;
     font-weight: 700;
     font-size: 18px;
     border: solid rgb(218, 205, 187);
+}
+#name, #email, #subject, #message{
+    border: solid rgb(218, 205, 187);
+    border-bottom: solid white 5px;
 }
 input, textarea {
     width: 100%;
@@ -85,7 +89,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .center {
-    margin-left: 20px;
+   
     background: rgb(218, 205, 187);
     margin-top: 0%;
     padding-bottom: 10px;
