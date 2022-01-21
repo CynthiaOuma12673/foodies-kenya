@@ -35,3 +35,5 @@ form.addEventListener("submit",(e)=>{
     e.preventDefault()
     validateInputs();
 });
+
+document.getElementById('button-btn').onclick='href="menu.html"'
